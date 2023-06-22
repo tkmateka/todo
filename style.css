@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --black: #181824;
+    --coal: #25273c;
+    --white: #ffffff;
+    --green: #57aa37;
+    --purple: #9f4cd6;
+    --grey: #33303e;
+    --blue: #286376;
+}
+
+* {
+    font-family: 'Indie Flower', cursive;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.padding-left-10px {
+    padding-left: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.screen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 400px;
+}
+
+.input-field input {
+    border: none;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--coal);
+    color: var(--white);
+    width: 80%;
+    height: 40px;
+    outline: none;
+}
+.input-field button {
+    height: 40px;
+    width: 19.5%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    margin-left: -5px !important;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.todo-list {
+    background-color: var(--coal);
+}
+.todo-list-container {
+    max-height: 50vh;
+    overflow-y: auto;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+.todo-item i {
+    padding: 0 10px;
+    font-size: 24px;
+    color: var(--purple);
+}
+
+.grey-border-bottom {
+    border-bottom: 1px solid var(--grey);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--purple);
+    color: var(--white);
+    padding: 10px;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--white);
+}
+
+.clear:hover {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.completed p {
+    color: var(--blue);
+    text-decoration: line-through var(--white);
+}

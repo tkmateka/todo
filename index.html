@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="no-margin">
+    <div class="screen">
+        <h1 class="title no-margin">TODO</h1>
+        <div class="main-container">
+            <div class="input-field">
+                <input type="text" placeholder="Create a new todo..." id="newTodo">
+                <button onclick="submit()"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </div>
+            <div class="todo-list" id="todo-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
